@@ -42,7 +42,7 @@
 					callback.call( this, event );
 				}
 			};
-		$( document ).on( 'keydown', this, function( event ){
+		$( this ).on( 'keydown', function( event ){
 			event.keyName = keyCode[event.keyCode];
 			apply.call( this, event, !keyCode[event.keyCode] );
 		} );
